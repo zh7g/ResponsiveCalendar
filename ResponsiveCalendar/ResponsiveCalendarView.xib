@@ -12,6 +12,14 @@
             <rect key="frame" x="0.0" y="0.0" width="479" height="363"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <collectionView fixedFrame="YES" selectable="YES" allowsMultipleSelection="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oe-vA-eqL" customClass="CalendarCollectionView" customModule="ResponsiveCalendar" customModuleProvider="target">
+                    <rect key="frame" x="1" y="42" width="477" height="279"/>
+                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <binding destination="ndv-B9-G3G" name="content" keyPath="arrangedObjects.day" id="aIT-Ow-WJ1"/>
+                        <outlet property="itemPrototype" destination="oGe-gz-IFc" id="uv8-qP-yIW"/>
+                    </connections>
+                </collectionView>
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCv-ed-ww6">
                     <rect key="frame" x="0.0" y="0.0" width="479" height="281"/>
                     <clipView key="contentView" id="J3D-W9-X4w">
