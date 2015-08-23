@@ -10,29 +10,26 @@ import Cocoa
 
 class DayItem : NSCollectionViewItem {
     
-//
-//    required init?(coder: NSCoder) {
-//        super.init(coder:coder)
-//        days = Calendar.sharedCalendar().getDays()
-//    }
-//    override func awakeFromNib() {
-//        var superBounds = self.collectionView.bounds
-//        let width = superBounds.width/7
-//        let height = superBounds.height/6
-//        print(width)
-//        print(height)
-//        self.view.setFrameSize(NSMakeSize(width, height))
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.needsDisplay = true
         // Do view setup here.
-//        var superBounds = self.collectionView.bounds
-//        let width = superBounds.width/7
-//        let height = superBounds.height/6
-//        self.view.frame.size = NSMakeSize(width, height)
     }
     
+    
+    override var selected: Bool {
+        didSet {
+            if selected{
+            print(representedObject)
+            }
+        }
+    }
+    
+    override func rightMouseDown(theEvent: NSEvent) {
+//        if !selected{
+//            print(self)
+//            selected = true
+//        }
+    }
     
 }

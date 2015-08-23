@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Date : NSObject{//, Printable{
+class Date : NSObject {//, Printable{
     
     var day: Int
     var month: Int
@@ -46,4 +46,8 @@ class Date : NSObject{//, Printable{
     override var description: String{
         return "\(self.year)-\(self.month)-\(self.day): \(self.weekday)"
     }
+}
+
+func ==(lhs: Date, rhs: Date) -> Bool{
+    return (lhs.day == rhs.day && lhs.month == rhs.month && lhs.year == rhs.year)
 }

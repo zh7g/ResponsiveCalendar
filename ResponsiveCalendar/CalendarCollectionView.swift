@@ -20,9 +20,9 @@ class CalendarCollectionView: NSCollectionView {
     }
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-
         // Drawing code here.
-        fixItemSize()
+        Swift.print("test...")
+//        fixItemSize()
     }
     
 //    var oldSizeOfSuperView: NSSize?
@@ -36,19 +36,28 @@ class CalendarCollectionView: NSCollectionView {
 //    }
 //    
 //    
-//    override func viewDidEndLiveResize() {
-//        Swift.print("test.....")
-//        let widthFactor = superview!.superview!.frame.width / oldSizeOfSuperView!.width
-//        let heightFactor = superview!.superview!.frame.height / oldSizeOfSuperView!.height
-//        self.frame.size = NSMakeSize(oldSize!.width * widthFactor, oldSize!.height * heightFactor)
-//        fixItemSize()
-////        self.needsDisplay = true
-//    }
+    override func viewDidEndLiveResize() {
+        fixItemSize()
+    }
     
      func fixItemSize(){
-        let w = self.bounds.width / 7
-        let h = self.bounds.height / 6
+        let w = self.bounds.width / 7 - 1
+        let h = self.bounds.height / 6 - 1
         self.minItemSize = NSMakeSize(w, h)
         self.maxItemSize = NSMakeSize(w, h)
     }
+    
+//    override func rightMouseDown(theEvent: NSEvent) {
+//        print("test")
+////        return super.rightMouseDown(theEvent)
+//    }
+//    override func newItemForRepresentedObject(object: AnyObject) -> NSCollectionViewItem {
+//        var item = object.item
+//        if item == nil{
+//            item = super.newItemForRepresentedObject(object)
+//            o
+//        }
+//    }
+    
+    
 }

@@ -22,10 +22,10 @@ class ViewController: NSViewController {
 //        placeHolder.translatesAutoresizingMaskIntoConstraints = false
 //
 //        let constraints = NSLayoutConstraint.constraintsWithVisualFormat("|-10-[calendarView]-10-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["calendarView": calendarView!])
-        let vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-10-[calendarView]-10-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["calendarView": calendarView!])
+//        let vConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-10-[calendarView]-10-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["calendarView": calendarView!])
 //
 //        placeHolder.addConstraints(constraints)
-        placeHolder.addConstraints(vConstraints)
+//        placeHolder.addConstraints(vConstraints)
     }
     
     override var representedObject: AnyObject? {
