@@ -12,37 +12,19 @@ class CalendarCollectionView: NSCollectionView {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        let w = self.bounds.width / 7
-//        let h = self.bounds.height / 6
-//        self.minItemSize = NSMakeSize(w, h)
-//        self.maxItemSize = NSMakeSize(w, h)
         fixItemSize()
     }
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-        // Drawing code here.
-        Swift.print("test...")
-//        fixItemSize()
     }
     
-//    var oldSizeOfSuperView: NSSize?
-//    var oldSize: NSSize?
-//    override func viewWillStartLiveResize() {
-//        oldSizeOfSuperView = superview!.superview!.frame.size
-//        oldSize = self.frame.size
-//        Swift.print(oldSizeOfSuperView)
-//        Swift.print(oldSize)
-//        
-//    }
-//    
-//    
     override func viewDidEndLiveResize() {
         fixItemSize()
     }
     
      func fixItemSize(){
-        let w = self.bounds.width / 7 - 1
-        let h = self.bounds.height / 6 - 1
+        let w = (self.bounds.width - 1) / 7
+        let h = self.bounds.height / 6
         self.minItemSize = NSMakeSize(w, h)
         self.maxItemSize = NSMakeSize(w, h)
     }

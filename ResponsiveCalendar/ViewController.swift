@@ -16,7 +16,7 @@ class ViewController: NSViewController {
         
         // Do any additional setup after loading the view.
         let calendarView = ResponsiveCalendarView.instance()
-        //        var calendarView = ResponsiveCalendarView()
+//                var calendarView = ResponsiveCalendarView()
         
         placeHolder.addSubview(calendarView!)
 //        placeHolder.translatesAutoresizingMaskIntoConstraints = false

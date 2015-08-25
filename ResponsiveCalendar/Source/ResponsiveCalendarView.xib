@@ -43,7 +43,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="173" id="4AI-VI-r8d"/>
                     </constraints>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="j97-4C-BlH" customClass="FlexibleTextField" customModule="ResponsiveCalendar" customModuleProvider="target">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="j97-4C-BlH" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" metaFont="system" size="20"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -54,66 +54,88 @@
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="age-VX-SyA">
                     <rect key="frame" x="68" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="一" id="PNY-nW-s3c">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="一" id="PNY-nW-s3c" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EeI-pg-4Sf">
                     <rect key="frame" x="136" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="二" id="bne-Eo-8hp">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="二" id="bne-Eo-8hp" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6t9-S4-vQ4">
                     <rect key="frame" x="204" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="三" id="YKW-3w-nSS">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="三" id="YKW-3w-nSS" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0aN-eU-q0B">
                     <rect key="frame" x="272" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="四" id="NfH-Br-zVB">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="四" id="NfH-Br-zVB" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UO2-sR-rPc">
                     <rect key="frame" x="340" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="五" id="bZZ-pO-VOD">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="五" id="bZZ-pO-VOD" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="exF-dj-qVA">
                     <rect key="frame" x="408" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="六" id="Bfk-Lv-OZf">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="六" id="Bfk-Lv-OZf" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-iK-rnb">
                     <rect key="frame" x="0.0" y="287" width="71" height="19"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="日" id="RlM-El-JLH">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="日" id="RlM-El-JLH" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                         <font key="font" size="15" name="STHeitiSC-Light"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="alignVerticalCenter" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </textFieldCell>
                 </textField>
                 <collectionView selectable="YES" allowsMultipleSelection="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oe-vA-eqL" customClass="CalendarCollectionView" customModule="ResponsiveCalendar" customModuleProvider="target">
                     <rect key="frame" x="2" y="0.0" width="475" height="277"/>
                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                     <connections>
-                        <binding destination="ndv-B9-G3G" name="content" keyPath="arrangedObjects.day" id="1HL-8Y-tlx"/>
+                        <binding destination="ndv-B9-G3G" name="content" keyPath="arrangedObjects.day" id="ZsF-hK-XBu"/>
                         <outlet property="itemPrototype" destination="oGe-gz-IFc" id="uv8-qP-yIW"/>
+                        <outlet property="menu" destination="Mw9-ED-2wd" id="Orj-xC-swe"/>
                     </connections>
                 </collectionView>
             </subviews>
@@ -188,7 +210,7 @@
                         <subviews>
                             <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6YJ-tR-A0u">
                                 <rect key="frame" x="-2" y="0.0" width="104" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="cvP-zq-MMc" customClass="FlexibleTextField" customModule="ResponsiveCalendar" customModuleProvider="target">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="cvP-zq-MMc" customClass="FlexibleTextFieldCell" customModule="ResponsiveCalendar" customModuleProvider="target">
                                     <font key="font" metaFont="system" size="18"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -202,10 +224,10 @@
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6YJ-tR-A0u" firstAttribute="top" secondItem="D43-ab-8S5" secondAttribute="top" id="15u-Ed-PAi"/>
-                            <constraint firstItem="6YJ-tR-A0u" firstAttribute="leading" secondItem="D43-ab-8S5" secondAttribute="leading" id="WlU-BX-x07"/>
-                            <constraint firstAttribute="trailing" secondItem="6YJ-tR-A0u" secondAttribute="trailing" id="jMi-LR-A1x"/>
-                            <constraint firstAttribute="bottom" secondItem="6YJ-tR-A0u" secondAttribute="bottom" id="zXc-cl-dKj"/>
+                            <constraint firstAttribute="bottom" secondItem="6YJ-tR-A0u" secondAttribute="bottom" id="Bnf-ZC-rGV"/>
+                            <constraint firstItem="6YJ-tR-A0u" firstAttribute="leading" secondItem="D43-ab-8S5" secondAttribute="leading" id="X9A-kk-YRu"/>
+                            <constraint firstItem="6YJ-tR-A0u" firstAttribute="top" secondItem="D43-ab-8S5" secondAttribute="top" id="YMX-lX-nkw"/>
+                            <constraint firstAttribute="trailing" secondItem="6YJ-tR-A0u" secondAttribute="trailing" id="fuR-xI-Asi"/>
                         </constraints>
                     </view>
                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -225,7 +247,10 @@
                 <constraint firstItem="mGC-dm-xyQ" firstAttribute="leading" secondItem="CgJ-zV-6C4" secondAttribute="leading" id="Rnq-RC-75K"/>
                 <constraint firstAttribute="bottom" secondItem="mGC-dm-xyQ" secondAttribute="bottom" id="qrL-Jb-v2i"/>
             </constraints>
-            <point key="canvasLocation" x="54" y="489"/>
+            <point key="canvasLocation" x="52" y="429"/>
         </view>
+        <menu id="Mw9-ED-2wd">
+            <point key="canvasLocation" x="231" y="449.5"/>
+        </menu>
     </objects>
 </document>

@@ -10,7 +10,6 @@ import Cocoa
 
 class ResponsiveCalendarView: NSView {
     private var calendar = Calendar.sharedCalendar()
-    //    var days = Calendar.sharedCalendar().getDays()
     @IBOutlet weak var monthLabel: NSTextField!
     @IBOutlet weak var arrayController: NSArrayController!
     @IBOutlet weak var collectionView: CalendarCollectionView!
@@ -23,13 +22,9 @@ class ResponsiveCalendarView: NSView {
     }
     
     override func awakeFromNib() {
-        //        Calendar.sharedCalendar()
         arrayController.content = calendar.days
-        
         monthLabel.stringValue = "\(calendar.baseDate.year())年\(calendar.baseDate.month())月"
-        //        collectionView.content = calendar.days
         self.autoresizingMask = [ .ViewWidthSizable, .ViewHeightSizable ]
-        
     }
     
     class func instance() -> ResponsiveCalendarView?{
@@ -60,6 +55,22 @@ class ResponsiveCalendarView: NSView {
         arrayController.content = []
         arrayController.content = calendar.days
     }
-
-
+    
+    
+    @IBInspectable var hasContextMenu: Bool = false
+    @IBOutlet weak var collectionViewMenu: NSMenu!
+    override func menuForEvent(event: NSEvent) -> NSMenu? {
+        if hasContextMenu{
+            if event.type == .RightMouseDown{
+                return  collectionViewMenu
+            }
+        }
+        return nil
+    }
+    
+    func setContextMenu(){
+        if hasContextMenu{
+            
+        }
+    }
 }

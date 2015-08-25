@@ -20,16 +20,8 @@ class DayItem : NSCollectionViewItem {
     override var selected: Bool {
         didSet {
             if selected{
-            print(representedObject)
+                print(representedObject)
             }
         }
     }
-    
-    override func rightMouseDown(theEvent: NSEvent) {
-//        if !selected{
-//            print(self)
-//            selected = true
-//        }
-    }
-    
 }
