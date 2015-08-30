@@ -16,7 +16,6 @@ class Date : NSObject {//, Printable{
     var weekday: Int
     
     init(date: NSDate){
-//        let components = dayMonthYearComponents(date)
         day = date.day()
         month = date.month()
         year = date.year()
@@ -24,7 +23,6 @@ class Date : NSObject {//, Printable{
     }
     
     convenience init(day: Int, month: Int, year: Int){
-//        var date = self.toNSDate(day, month: month, year: year)
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
         let dateString = String(format: "%04d%02d%02d", arguments: [ year, month, day ])
