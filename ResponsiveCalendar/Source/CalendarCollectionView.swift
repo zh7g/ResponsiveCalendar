@@ -8,8 +8,8 @@
 
 import Cocoa
 
-class CalendarCollectionView: NSCollectionView {
-
+class CalendarCollectionView: NSCollectionView{
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         fixItemSize()
@@ -22,24 +22,22 @@ class CalendarCollectionView: NSCollectionView {
         fixItemSize()
     }
     
-     func fixItemSize(){
+    func fixItemSize(){
         let w = (self.bounds.width - 1) / 7
         let h = self.bounds.height / 6
         self.minItemSize = NSMakeSize(w, h)
         self.maxItemSize = NSMakeSize(w, h)
     }
     
-//    override func rightMouseDown(theEvent: NSEvent) {
-//        print("test")
-////        return super.rightMouseDown(theEvent)
-//    }
-//    override func newItemForRepresentedObject(object: AnyObject) -> NSCollectionViewItem {
-//        var item = object.item
-//        if item == nil{
-//            item = super.newItemForRepresentedObject(object)
-//            o
-//        }
-//    }
-    
+    //    @IBInspectable var hasContextMenu: Bool = false
+    //    @IBOutlet weak var collectionViewMenu: NSMenu!
+    //    override func menuForEvent(event: NSEvent) -> NSMenu? {
+    //        if hasContextMenu{
+    //            if event.type == .RightMouseDown{
+    //                return  collectionViewMenu
+    //            }
+    //        }
+    //        return nil
+    //    }
     
 }

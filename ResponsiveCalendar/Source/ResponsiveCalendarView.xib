@@ -135,7 +135,6 @@
                     <connections>
                         <binding destination="ndv-B9-G3G" name="content" keyPath="arrangedObjects.day" id="ZsF-hK-XBu"/>
                         <outlet property="itemPrototype" destination="oGe-gz-IFc" id="uv8-qP-yIW"/>
-                        <outlet property="menu" destination="Mw9-ED-2wd" id="Orj-xC-swe"/>
                     </connections>
                 </collectionView>
             </subviews>
@@ -193,7 +192,7 @@
                 <string>day</string>
             </declaredKeys>
         </arrayController>
-        <collectionViewItem id="oGe-gz-IFc" customClass="DayItem" customModule="ResponsiveCalendar" customModuleProvider="target">
+        <collectionViewItem id="oGe-gz-IFc">
             <connections>
                 <outlet property="view" destination="CgJ-zV-6C4" id="QpC-8l-Sjd"/>
             </connections>
@@ -249,8 +248,5 @@
             </constraints>
             <point key="canvasLocation" x="52" y="429"/>
         </view>
-        <menu id="Mw9-ED-2wd">
-            <point key="canvasLocation" x="231" y="449.5"/>
-        </menu>
     </objects>
 </document>

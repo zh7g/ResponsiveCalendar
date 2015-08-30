@@ -10,7 +10,6 @@
 		067C5C431B8C169D0006E32D /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C3A1B8C169D0006E32D /* Calendar.swift */; };
 		067C5C441B8C169D0006E32D /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C3B1B8C169D0006E32D /* CalendarCollectionView.swift */; };
 		067C5C451B8C169D0006E32D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C3C1B8C169D0006E32D /* Date.swift */; };
-		067C5C461B8C169D0006E32D /* DayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C3D1B8C169D0006E32D /* DayItem.swift */; };
 		067C5C481B8C169D0006E32D /* FlexibleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C3F1B8C169D0006E32D /* FlexibleTextFieldCell.swift */; };
 		067C5C491B8C169D0006E32D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C401B8C169D0006E32D /* NSDateExtension.swift */; };
 		067C5C4A1B8C169D0006E32D /* ResponsiveCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C5C411B8C169D0006E32D /* ResponsiveCalendarView.swift */; };
@@ -36,7 +35,6 @@
 		067C5C3A1B8C169D0006E32D /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Source/Calendar.swift; sourceTree = "<group>"; };
 		067C5C3B1B8C169D0006E32D /* CalendarCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarCollectionView.swift; path = Source/CalendarCollectionView.swift; sourceTree = "<group>"; };
 		067C5C3C1B8C169D0006E32D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Source/Date.swift; sourceTree = "<group>"; };
-		067C5C3D1B8C169D0006E32D /* DayItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayItem.swift; path = Source/DayItem.swift; sourceTree = "<group>"; };
 		067C5C3F1B8C169D0006E32D /* FlexibleTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlexibleTextFieldCell.swift; path = Source/FlexibleTextFieldCell.swift; sourceTree = "<group>"; };
 		067C5C401B8C169D0006E32D /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateExtension.swift; path = Source/NSDateExtension.swift; sourceTree = "<group>"; };
 		067C5C411B8C169D0006E32D /* ResponsiveCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponsiveCalendarView.swift; path = Source/ResponsiveCalendarView.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				067C5C3A1B8C169D0006E32D /* Calendar.swift */,
 				067C5C3B1B8C169D0006E32D /* CalendarCollectionView.swift */,
 				067C5C3C1B8C169D0006E32D /* Date.swift */,
-				067C5C3D1B8C169D0006E32D /* DayItem.swift */,
 				067C5C3F1B8C169D0006E32D /* FlexibleTextFieldCell.swift */,
 				067C5C401B8C169D0006E32D /* NSDateExtension.swift */,
 				067C5C411B8C169D0006E32D /* ResponsiveCalendarView.swift */,
@@ -236,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				067C5C441B8C169D0006E32D /* CalendarCollectionView.swift in Sources */,
-				067C5C461B8C169D0006E32D /* DayItem.swift in Sources */,
 				067C5C481B8C169D0006E32D /* FlexibleTextFieldCell.swift in Sources */,
 				067C5C4A1B8C169D0006E32D /* ResponsiveCalendarView.swift in Sources */,
 				067C5C451B8C169D0006E32D /* Date.swift in Sources */,

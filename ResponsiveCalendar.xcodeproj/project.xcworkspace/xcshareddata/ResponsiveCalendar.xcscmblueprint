@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5EC71D0392240C091A1D4AF6A10B088089D866F5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5EC71D0392240C091A1D4AF6A10B088089D866F5" : 0,
+    "56DEA749EF87FCE0E751F90F8B3818BCA7AD8E38" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "90DCECBC-96C4-4A02-AF7C-5BB3A3F3E3A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5EC71D0392240C091A1D4AF6A10B088089D866F5" : "ResponsiveCalendar\/",
+    "56DEA749EF87FCE0E751F90F8B3818BCA7AD8E38" : "FlexibleTextField\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ResponsiveCalendar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ResponsiveCalendar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zzp\/OneDrive\/src\/FlexibleTextField\/",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56DEA749EF87FCE0E751F90F8B3818BCA7AD8E38"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zzp\/OneDrive\/src\/ResponsiveCalendar\/",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EC71D0392240C091A1D4AF6A10B088089D866F5"
+    }
+  ]
+}

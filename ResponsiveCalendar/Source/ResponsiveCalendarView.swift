@@ -25,6 +25,7 @@ class ResponsiveCalendarView: NSView {
         arrayController.content = calendar.days
         monthLabel.stringValue = "\(calendar.baseDate.year())年\(calendar.baseDate.month())月"
         self.autoresizingMask = [ .ViewWidthSizable, .ViewHeightSizable ]
+        collectionView.addObserver(self, forKeyPath: "selectionIndexes", options: NSKeyValueObservingOptions.New, context: nil)
     }
     
     class func instance() -> ResponsiveCalendarView?{
@@ -38,7 +39,18 @@ class ResponsiveCalendarView: NSView {
         }
         return nil
     }
+    var selectedDates: [Date]{
+        var dates: [Date] = []
+        for i in collectionView.selectionIndexes{
+            dates.append(calendar.days[i])
+        }
+        return dates
+    }
     
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        Swift.print("selection changed")
+        Swift.print(selectedDates)
+    }
     
     @IBAction func previousMonth(sender: AnyObject) {
         Swift.print("prev month")
@@ -56,21 +68,4 @@ class ResponsiveCalendarView: NSView {
         arrayController.content = calendar.days
     }
     
-    
-    @IBInspectable var hasContextMenu: Bool = false
-    @IBOutlet weak var collectionViewMenu: NSMenu!
-    override func menuForEvent(event: NSEvent) -> NSMenu? {
-        if hasContextMenu{
-            if event.type == .RightMouseDown{
-                return  collectionViewMenu
-            }
-        }
-        return nil
-    }
-    
-    func setContextMenu(){
-        if hasContextMenu{
-            
-        }
-    }
 }

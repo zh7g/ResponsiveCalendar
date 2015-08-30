@@ -9,57 +9,26 @@
 import Foundation
 
 class Calendar {
-//    var currentMonth: [Date]? {
-//        
-//    }
     
-    private static var instance: Calendar?
+    private static let instance = Calendar()
     let numberOfDaysInPage = 42
     
-//    var firstDayOfMonth: Date{
-//        let calendar = NSCalendar.currentCalendar()
-//        var components = calendar.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: baseDate)
-//        components.day = 1
-//        var date = calendar.dateFromComponents(components)
-//        return Date(date: date!)
-//    }
-    
-//    var lastDayOfMonth: Date{
-//        println("base date:\(baseDate)")
-//        let calendar = NSCalendar.currentCalendar()
-//        var components = calendar.components(.CalendarUnitYear | .CalendarUnitMonth, fromDate: baseDate)
-//        components.month += 1
-//        components.day = 0
-//        var date = calendar.dateFromComponents(components)
-//        return Date(date: date!)
-//    }
-//  
     class func sharedCalendar() -> Calendar{
-        if instance == nil {
-            instance = Calendar()
-        }
-        return instance!
+        return instance
     }
     
-    var baseDate: NSDate{
-        didSet{
-            print("didset to do")
-            days = getDays()
-//            pageDays = getPageDays()
-        }
+    var baseDate: NSDate
+    
+    private init(date: NSDate){
+        baseDate = date
     }
     
-    convenience init(){
+    private convenience init(){
         self.init(date: NSDate())
     }
-    init(date: NSDate){
-        baseDate = date
-        days = getDays()
-    }
-    var days: [Date]!
-    func getDays() -> [Date]{
-        var dates: [Date] = []
-        
+    
+    var days: [Date]{
+        var dates: [Date] =  []
         let calendar = NSCalendar.currentCalendar()
         var components = calendar.components([.Year, .Month, .Day], fromDate: baseDate)
         components.day = 1
@@ -84,18 +53,15 @@ class Calendar {
             }
         }
         for day in firstDayOfMonth.day...lastDayOfMonth.day{
-            let d = Date(day: day, month: firstDayOfMonth.month, year: firstDayOfMonth.year)
-//            print(d)
-            dates.append(d)
+            dates.append(Date(day: day, month: firstDayOfMonth.month, year: firstDayOfMonth.year))
         }
         
         let firstDayOfNextMonth = Date(date: calendar.dateByAddingUnit(.Day, value: 1, toDate: lastDayOfMonth.toNSDate()!, options: [])!)
-        print(firstDayOfNextMonth)
         
         for day in 1...numberOfTailingDays{
             dates.append(Date(day: day, month: firstDayOfNextMonth.month, year: firstDayOfNextMonth.year))
         }
-        print(dates)
+        Swift.print(dates)
         return dates
     }
     
@@ -114,7 +80,5 @@ class Calendar {
         components.month += 1
         baseDate = calendar.dateFromComponents(components)!
     }
-    
-    
     
 }
