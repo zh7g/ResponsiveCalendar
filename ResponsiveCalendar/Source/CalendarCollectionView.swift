@@ -10,14 +10,10 @@ import Cocoa
 
 class CalendarCollectionView: NSCollectionView{
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override func viewWillDraw() {
+        super.viewWillDraw()
         fixItemSize()
     }
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
-    }
-    
     override func viewDidEndLiveResize() {
         fixItemSize()
     }
